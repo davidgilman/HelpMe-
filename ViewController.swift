@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 import ParseUI
+import Social
 
 class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
 
@@ -91,6 +92,28 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
         }
         
     }
+    @IBAction func shareAction(sender: AnyObject) {
+        
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
+            
+            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
     
-    
+            facebookSheet.setInitialText("I'm getting bullied in the Library, HelpMe!")
+
+            self.presentViewController(facebookSheet, animated: true, completion: nil)
+        
+        } else {
+        
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+
 }
+}
+    
+

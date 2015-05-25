@@ -2,6 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZBO-K3-voM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIa-11-qHx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIa-11-qHx">
                                 <rect key="frame" x="168" y="85" width="136" height="124"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
@@ -28,7 +31,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL6-Ao-yFO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL6-Ao-yFO">
                                 <rect key="frame" x="168" y="365" width="136" height="124"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
@@ -42,7 +45,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-uF-0lh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-uF-0lh">
                                 <rect key="frame" x="16" y="365" width="136" height="124"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
@@ -56,9 +59,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGe-U1-jn2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGe-U1-jn2">
                                 <rect key="frame" x="16" y="85" width="136" height="124"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="VhW-r3-Fyj"/>
+                                    <constraint firstAttribute="width" constant="136" id="ms5-ab-hxb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Library">
@@ -69,10 +76,17 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendMessage:" destination="Wvw-c0-YDj" eventType="touchUpInside" id="Ljg-hd-MbB"/>
+                                    <action selector="shareAction:" destination="Wvw-c0-YDj" eventType="touchUpInside" id="vW8-ub-quh"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amc-Wc-DGx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amc-Wc-DGx">
                                 <rect key="frame" x="16" y="504" width="288" height="49"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Ay0-Hq-2c3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Rename Buttons">
@@ -84,9 +98,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCX-Yx-5mG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCX-Yx-5mG">
                                 <rect key="frame" x="16" y="225" width="136" height="124"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="mNp-XW-T1Y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Offices"/>
@@ -96,7 +113,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-DN-3nw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-DN-3nw">
                                 <rect key="frame" x="168" y="225" width="136" height="124"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
@@ -112,6 +129,35 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yGe-U1-jn2" firstAttribute="top" secondItem="BzE-8u-rpr" secondAttribute="bottom" constant="21" id="3aG-aN-TSg"/>
+                            <constraint firstItem="yGe-U1-jn2" firstAttribute="baseline" secondItem="UIa-11-qHx" secondAttribute="firstBaseline" id="5Ja-a4-nvG"/>
+                            <constraint firstItem="UCX-Yx-5mG" firstAttribute="leading" secondItem="M13-WH-PRE" secondAttribute="leadingMargin" id="6C9-pb-V1r"/>
+                            <constraint firstItem="VL6-Ao-yFO" firstAttribute="leading" secondItem="W2f-DN-3nw" secondAttribute="leading" id="C4t-67-PEk"/>
+                            <constraint firstItem="W2f-DN-3nw" firstAttribute="trailing" secondItem="VL6-Ao-yFO" secondAttribute="trailing" id="CAw-gS-fsI"/>
+                            <constraint firstItem="7hE-uF-0lh" firstAttribute="top" secondItem="UCX-Yx-5mG" secondAttribute="bottom" constant="16" id="Ef8-ca-sVM"/>
+                            <constraint firstItem="UCX-Yx-5mG" firstAttribute="trailing" secondItem="yGe-U1-jn2" secondAttribute="trailing" id="IEd-5i-PbA"/>
+                            <constraint firstItem="UCX-Yx-5mG" firstAttribute="baseline" secondItem="W2f-DN-3nw" secondAttribute="firstBaseline" id="IS3-EQ-37o"/>
+                            <constraint firstItem="W2f-DN-3nw" firstAttribute="trailing" secondItem="M13-WH-PRE" secondAttribute="trailingMargin" id="Ivy-tq-j8w"/>
+                            <constraint firstItem="UCX-Yx-5mG" firstAttribute="top" secondItem="yGe-U1-jn2" secondAttribute="bottom" constant="16" id="K23-B3-tst"/>
+                            <constraint firstItem="UCX-Yx-5mG" firstAttribute="leading" secondItem="yGe-U1-jn2" secondAttribute="leading" id="L2i-lh-4Up"/>
+                            <constraint firstItem="W2f-DN-3nw" firstAttribute="baseline" secondItem="UCX-Yx-5mG" secondAttribute="firstBaseline" id="PMU-R7-AbH"/>
+                            <constraint firstItem="VL6-Ao-yFO" firstAttribute="top" secondItem="7hE-uF-0lh" secondAttribute="top" id="UGz-wQ-pFO"/>
+                            <constraint firstItem="UIa-11-qHx" firstAttribute="leading" secondItem="W2f-DN-3nw" secondAttribute="leading" id="XeI-zg-rvI"/>
+                            <constraint firstItem="7hE-uF-0lh" firstAttribute="baseline" secondItem="VL6-Ao-yFO" secondAttribute="firstBaseline" id="XmY-5J-1BF"/>
+                            <constraint firstItem="7hE-uF-0lh" firstAttribute="leading" secondItem="amc-Wc-DGx" secondAttribute="leading" id="Xvj-kf-U9X"/>
+                            <constraint firstItem="r9G-bf-7tX" firstAttribute="top" secondItem="amc-Wc-DGx" secondAttribute="bottom" constant="15" id="Zel-Xw-K1F"/>
+                            <constraint firstItem="UIa-11-qHx" firstAttribute="leading" secondItem="yGe-U1-jn2" secondAttribute="trailing" constant="16" id="eKO-BE-JXa"/>
+                            <constraint firstItem="UCX-Yx-5mG" firstAttribute="top" secondItem="W2f-DN-3nw" secondAttribute="top" id="gYn-zR-d5O"/>
+                            <constraint firstItem="UIa-11-qHx" firstAttribute="top" secondItem="yGe-U1-jn2" secondAttribute="top" id="ka0-9z-j9D"/>
+                            <constraint firstItem="UCX-Yx-5mG" firstAttribute="leading" secondItem="7hE-uF-0lh" secondAttribute="leading" id="mhv-h4-f0x"/>
+                            <constraint firstItem="amc-Wc-DGx" firstAttribute="top" secondItem="7hE-uF-0lh" secondAttribute="bottom" constant="15" id="q29-yy-Za3"/>
+                            <constraint firstItem="UIa-11-qHx" firstAttribute="baseline" secondItem="yGe-U1-jn2" secondAttribute="firstBaseline" id="qdI-CT-mvV"/>
+                            <constraint firstItem="VL6-Ao-yFO" firstAttribute="baseline" secondItem="7hE-uF-0lh" secondAttribute="firstBaseline" id="r6f-4V-b88"/>
+                            <constraint firstItem="7hE-uF-0lh" firstAttribute="trailing" secondItem="UCX-Yx-5mG" secondAttribute="trailing" id="vtp-vj-J5o"/>
+                            <constraint firstItem="VL6-Ao-yFO" firstAttribute="trailing" secondItem="amc-Wc-DGx" secondAttribute="trailing" id="wVX-Na-uyM"/>
+                            <constraint firstItem="W2f-DN-3nw" firstAttribute="trailing" secondItem="UIa-11-qHx" secondAttribute="trailing" id="wrv-P0-B8N"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ANX-T0-zKK">
                         <nil key="title"/>
