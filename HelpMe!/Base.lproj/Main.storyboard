@@ -30,13 +30,16 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareAction2:" destination="Wvw-c0-YDj" eventType="touchUpInside" id="xCp-AY-TW9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL6-Ao-yFO">
                                 <rect key="frame" x="168" y="365" width="136" height="124"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Blacktop">
+                                <state key="normal" title="Track">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -44,6 +47,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareAction6:" destination="Wvw-c0-YDj" eventType="touchUpInside" id="b4F-br-ftD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-uF-0lh">
                                 <rect key="frame" x="16" y="365" width="136" height="124"/>
@@ -58,6 +64,10 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareAction2:" destination="Wvw-c0-YDj" eventType="touchUpInside" id="XwF-gY-gh4"/>
+                                    <action selector="shareAction5:" destination="Wvw-c0-YDj" eventType="touchUpInside" id="Beg-iE-Y8T"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGe-U1-jn2">
                                 <rect key="frame" x="16" y="85" width="136" height="124"/>
@@ -77,7 +87,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="sendMessage:" destination="Wvw-c0-YDj" eventType="touchUpInside" id="Ljg-hd-MbB"/>
                                     <action selector="shareAction:" destination="Wvw-c0-YDj" eventType="touchUpInside" id="vW8-ub-quh"/>
                                 </connections>
                             </button>
@@ -112,13 +121,16 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareAction3:" destination="Wvw-c0-YDj" eventType="touchUpInside" id="mbS-SV-EaP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-DN-3nw">
                                 <rect key="frame" x="168" y="225" width="136" height="124"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Classroom">
+                                <state key="normal" title="Parking Area">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -126,6 +138,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareAction4:" destination="Wvw-c0-YDj" eventType="touchUpInside" id="2Bq-r8-akY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

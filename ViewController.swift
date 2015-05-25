@@ -114,6 +114,107 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
     }
 
 }
+    @IBAction func shareAction2(sender: AnyObject) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
+            
+            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            
+            facebookSheet.setInitialText("I'm getting bullied in the Cafeteria, HelpMe!")
+            
+            self.presentViewController(facebookSheet, animated: true, completion: nil)
+            
+        } else {
+            
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+    }
+  
+    @IBAction func shareAction5(sender: AnyObject) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
+            
+            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            
+            facebookSheet.setInitialText("I'm getting bullied in the Theatre, HelpMe!")
+            
+            self.presentViewController(facebookSheet, animated: true, completion: nil)
+            
+        } else {
+            
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+    }
+    @IBAction func shareAction3(sender: AnyObject) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
+            
+            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            
+            facebookSheet.setInitialText("I'm getting bullied near the Admin Offices, HelpMe!")
+            
+            self.presentViewController(facebookSheet, animated: true, completion: nil)
+            
+        } else {
+            
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+    }
+    @IBAction func shareAction6(sender: AnyObject) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
+            
+            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            
+            facebookSheet.setInitialText("I'm getting bullied near the Track area, HelpMe!")
+            
+            self.presentViewController(facebookSheet, animated: true, completion: nil)
+            
+        } else {
+            
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+    }
+    @IBAction func shareAction4(sender: AnyObject) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
+            
+            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            
+            facebookSheet.setInitialText("I'm getting bullied in the Parking Area, HelpMe!")
+            
+            self.presentViewController(facebookSheet, animated: true, completion: nil)
+            
+        } else {
+            
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+    }
 }
     
 
