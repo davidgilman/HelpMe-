@@ -28,7 +28,7 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any sources that can be recreated.
     }
 
     //Parse Login
