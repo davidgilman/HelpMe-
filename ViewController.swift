@@ -104,7 +104,7 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
         
         } else {
         
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
         
             
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
@@ -125,7 +125,7 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
             
         } else {
             
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
             
             
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
@@ -146,7 +146,7 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
             
         } else {
             
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
             
             
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
@@ -166,7 +166,7 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
             
         } else {
             
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
             
             
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
@@ -186,7 +186,7 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
             
         } else {
             
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
             
             
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
@@ -206,7 +206,7 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
             
         } else {
             
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
             
             
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
