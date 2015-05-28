@@ -64,6 +64,21 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
     func signUpViewControllerDidCancelSignUp(signUpController: PFSignUpViewController) {
         println("User dismissed Sign Up")
     }
+    func messageComposeViewController(controller: MFMessageComposeViewController!, didFinishWithResult result: MessageComposeResult) {
+    switch (result.value) {
+    case MessageComposeResultCancelled.value:
+      println("Message was cancelled")
+      self.dismissViewControllerAnimated(true, completion: nil)
+    case MessageComposeResultFailed.value:
+      println("Message failed")
+      self.dismissViewControllerAnimated(true, completion: nil)
+    case MessageComposeResultSent.value:
+      println("Message was sent")
+     self.dismissViewControllerAnimated(true, completion: nil)
+    default:
+      break;
+    }
+}
     
     @IBAction func logoutAction(sender: AnyObject) {
         
@@ -94,126 +109,72 @@ class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpV
     }
     @IBAction func shareAction(sender: AnyObject) {
         
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
-            
-            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+           var messageVC = MFMessageComposeViewController()
     
-            facebookSheet.setInitialText("I'm getting bullied in the Library, HelpMe!")
-
-            self.presentViewController(facebookSheet, animated: true, completion: nil)
-        
-        } else {
-        
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
-        
-            
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-        
+           messageVC.body = "Enter a message";
+           messageVC.recipients = ["5108619909","9252161829"]
+           messageVC.messageComposeDelegate = self;
+    
+           self.presentViewController(messageVC, animated: false, completion: nil)
     }
 
 }
     @IBAction func shareAction2(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
-            
-            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            
-            facebookSheet.setInitialText("I'm getting bullied in the Cafeteria, HelpMe!")
-            
-            self.presentViewController(facebookSheet, animated: true, completion: nil)
-            
-        } else {
-            
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-            
+        
+           var messageVC = MFMessageComposeViewController()
+    
+           messageVC.body = "Enter a message";
+           messageVC.recipients = [""5108619909","9252161829""]
+           messageVC.messageComposeDelegate = self;
+    
+           self.presentViewController(messageVC, animated: false, completion: nil)
         }
     }
     @IBAction func shareAction3(sender: AnyObject) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
-            
-            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            
-            facebookSheet.setInitialText("I'm getting bullied near the Admin Offices, HelpMe!")
-            
-            self.presentViewController(facebookSheet, animated: true, completion: nil)
-            
-        } else {
-            
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-            
+               
+           var messageVC = MFMessageComposeViewController()
+    
+           messageVC.body = "Enter a message";
+           messageVC.recipients = [""5108619909","9252161829""]
+           messageVC.messageComposeDelegate = self;
+    
+           self.presentViewController(messageVC, animated: false, completion: nil)
         }
         
 }
     @IBAction func shareAction5(sender: AnyObject) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
-            
-            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            
-            facebookSheet.setInitialText("I'm getting bullied near the Theatre, HelpMe!")
-            
-            self.presentViewController(facebookSheet, animated: true, completion: nil)
-            
-        } else {
-            
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-            
+                
+           var messageVC = MFMessageComposeViewController()
+    
+           messageVC.body = "Enter a message";
+           messageVC.recipients = [""5108619909","9252161829""]
+           messageVC.messageComposeDelegate = self;
+    
+           self.presentViewController(messageVC, animated: false, completion: nil)
         }
 
     }
     @IBAction func shareAction6(sender: AnyObject) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
-            
-            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            
-            facebookSheet.setInitialText("I'm getting bullied near the Track area, HelpMe!")
-            
-            self.presentViewController(facebookSheet, animated: true, completion: nil)
-            
-        } else {
-            
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-            
+               
+           var messageVC = MFMessageComposeViewController()
+    
+           messageVC.body = "Enter a message";
+           messageVC.recipients = [""5108619909","9252161829""]
+           messageVC.messageComposeDelegate = self;
+    
+           self.presentViewController(messageVC, animated: false, completion: nil)
         }
     }
     @IBAction func shareAction4(sender: AnyObject) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
-            
-            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            
-            facebookSheet.setInitialText("I'm getting bullied in the Parking Area, HelpMe!")
-            
-            self.presentViewController(facebookSheet, animated: true, completion: nil)
-            
-        } else {
-            
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account in settings to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-            
+               
+           var messageVC = MFMessageComposeViewController()
+    
+           messageVC.body = "Enter a message";
+           messageVC.recipients = [""5108619909","9252161829""]
+           messageVC.messageComposeDelegate = self;
+    
+           self.presentViewController(messageVC, animated: false, completion: nil)
         }
     }
 }
