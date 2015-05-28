@@ -11,7 +11,7 @@ import Parse
 import ParseUI
 import Social
 
-class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
+class ViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, MFMessageComposeViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
